@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Remy Events Premium Design System */
+    --background: 40 30% 98%;
+    --foreground: 220 40% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 13%;
+
+    /* Deep Midnight Blue - Trust & Premium */
+    --primary: 220 60% 20%;
+    --primary-foreground: 40 30% 98%;
+
+    /* Champagne Gold - Celebration & Joy */
+    --accent: 40 75% 55%;
+    --accent-foreground: 220 60% 15%;
+
+    --secondary: 220 25% 94%;
+    --secondary-foreground: 220 40% 20%;
+
+    --muted: 40 15% 93%;
+    --muted-foreground: 220 15% 45%;
+
+    --destructive: 0 55% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 150 45% 42%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 220 20% 88%;
+    --input: 220 20% 88%;
+    --ring: 40 75% 55%;
+
+    --radius: 1rem;
+
+    /* Custom Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(220 60% 15% / 0.95) 0%, hsl(220 50% 25% / 0.9) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(40 75% 55%) 0%, hsl(35 80% 45%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(40 30% 98%) 100%);
+    --gradient-glass: linear-gradient(135deg, hsl(0 0% 100% / 0.9) 0%, hsl(0 0% 100% / 0.7) 100%);
+
+    /* Premium Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(220 60% 20% / 0.08);
+    --shadow-card: 0 8px 30px -8px hsl(220 60% 20% / 0.12);
+    --shadow-elevated: 0 20px 50px -12px hsl(220 60% 20% / 0.18);
+    --shadow-gold: 0 8px 30px -8px hsl(40 75% 55% / 0.35);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 50% 8%;
+    --foreground: 40 30% 96%;
+
+    --card: 220 45% 12%;
+    --card-foreground: 40 30% 96%;
+
+    --popover: 220 45% 12%;
+    --popover-foreground: 40 30% 96%;
+
+    --primary: 40 75% 55%;
+    --primary-foreground: 220 60% 10%;
+
+    --accent: 40 75% 55%;
+    --accent-foreground: 220 60% 10%;
+
+    --secondary: 220 40% 18%;
+    --secondary-foreground: 40 30% 96%;
+
+    --muted: 220 35% 20%;
+    --muted-foreground: 220 15% 60%;
+
+    --destructive: 0 55% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 150 45% 38%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 220 35% 22%;
+    --input: 220 35% 22%;
+    --ring: 40 75% 55%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(220 60% 8% / 0.98) 0%, hsl(220 50% 15% / 0.95) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(220 45% 12%) 0%, hsl(220 45% 10%) 100%);
+    --gradient-glass: linear-gradient(135deg, hsl(220 45% 15% / 0.9) 0%, hsl(220 45% 12% / 0.7) 100%);
+
+    --shadow-soft: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
+    --shadow-card: 0 8px 30px -8px hsl(0 0% 0% / 0.4);
+    --shadow-elevated: 0 20px 50px -12px hsl(0 0% 0% / 0.5);
+
+    --sidebar-background: 220 50% 10%;
+    --sidebar-foreground: 40 30% 96%;
+    --sidebar-primary: 40 75% 55%;
+    --sidebar-primary-foreground: 220 60% 10%;
+    --sidebar-accent: 220 40% 18%;
+    --sidebar-accent-foreground: 40 30% 96%;
+    --sidebar-border: 220 35% 22%;
+    --sidebar-ring: 40 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer utilities {
+  /* Glassmorphism */
+  .glass {
+    @apply bg-gradient-to-br from-white/90 to-white/70 backdrop-blur-xl;
+  }
+
+  .glass-dark {
+    @apply bg-gradient-to-br from-primary/90 to-primary/70 backdrop-blur-xl;
+  }
+
+  /* Floating card styles */
+  .floating-card {
+    @apply bg-card rounded-2xl p-6 shadow-card border border-border/50;
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-card);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .floating-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-elevated);
+  }
+
+  /* Gold accent */
+  .gold-gradient {
+    background: var(--gradient-gold);
+  }
+
+  .gold-text {
+    background: linear-gradient(135deg, hsl(40 75% 55%) 0%, hsl(35 80% 45%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Text shadows for hero */
+  .text-shadow {
+    text-shadow: 0 2px 20px hsl(0 0% 0% / 0.3);
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes pulse-soft {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, hsl(40 75% 55% / 0.3), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 3s ease-in-out infinite;
+}
+
+.animate-sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
