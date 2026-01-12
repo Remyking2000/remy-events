@@ -39,7 +39,7 @@ const categories = [
   {
     id: "corporate",
     title: "Corporate Events",
-    description: "Team building & launches",
+    description: "Meetings, launches & team building",
     icon: Building2,
     gradient: "from-blue-500 to-indigo-600",
     bgGlow: "bg-blue-500/20",

@@ -120,12 +120,19 @@ const Contact = () => {
                       className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all"
                     >
                       <option value="">Select an event type</option>
-                      <option value="birthday">Birthday Party</option>
-                      <option value="corporate">Corporate Event</option>
-                      <option value="baby-shower">Baby Shower</option>
-                      <option value="bridal-shower">Bridal Shower</option>
-                      <option value="engagement">Engagement Party</option>
-                      <option value="private">Private Celebration</option>
+                      <optgroup label="Social Events">
+                        <option value="birthday">Birthday Party</option>
+                        <option value="baby-shower">Baby Shower</option>
+                        <option value="bridal-shower">Bridal Shower</option>
+                        <option value="engagement">Engagement Party</option>
+                        <option value="private">Private Celebration</option>
+                      </optgroup>
+                      <optgroup label="Corporate Events">
+                        <option value="corporate">Corporate Event</option>
+                        <option value="meeting">Business Meeting</option>
+                        <option value="team-building">Team Building</option>
+                        <option value="launch">Product Launch</option>
+                      </optgroup>
                       <option value="other">Other</option>
                     </select>
                   </div>

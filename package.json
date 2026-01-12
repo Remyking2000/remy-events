@@ -1,10 +1,10 @@
 {
-  "name": "saitoti-njapit-web-app",
+  "name": "remy-events",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "author": "Saitoti Njapit",
-  "description": "Professional web application by Saitoti Njapit",
+  "author": "Remy Richard",
+  "description": "Remy Events - A Technology-Enabled Event Packaging and Management Company",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -8,11 +8,11 @@ console.log(
   "color: #2563eb; font-size: 24px; font-weight: bold;"
 );
 console.log(
-  "%cDeveloped with ❤️ by Saitoti Njapit",
+  "%cDeveloped by Remy and Saitoti",
   "color: #059669; font-size: 14px; font-weight: 500;"
 );
 console.log(
-  "%cContact: saitoti.njapit@example.com",
+  "%cContact: remyevents@gmail.com",
   "color: #6b7280; font-size: 12px;"
 );
 

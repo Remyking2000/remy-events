@@ -1,10 +1,13 @@
-# Professional Web Application
+# Remy Events - Event Management Platform
 
-**Developer**: Saitoti Njapit
+**Business**: Remy Events  
+**Founder**: Remy Richard  
+**Location**: Nairobi, Kenya  
+**Type**: Technology-Enabled Event Packaging and Management Company
 
 ## Project Overview
 
-This is a modern web application built with cutting-edge technologies, designed and developed by Saitoti Njapit. The application features a responsive design, modern UI components, and optimized performance.
+Remy Events is a comprehensive event management platform designed to eliminate the complexity, inefficiency, and stress associated with planning social and corporate events. The platform offers curated and customizable event packages through a web application, covering planning, sourcing, coordination, execution, cleanup, and vendor payments.
 
 ## Technologies Used
 
@@ -48,19 +51,59 @@ npm run dev
 
 ```
 src/
-├── components/     # Reusable UI components
-├── pages/         # Application pages/routes
-├── hooks/         # Custom React hooks
-├── lib/           # Utility functions
-└── assets/        # Static assets
+├── components/          # Reusable UI components
+│   ├── event/          # Event-specific components (Timeline, Checklist)
+│   ├── feedback/       # Feedback and testimonial components
+│   ├── home/           # Homepage sections
+│   └── layout/         # Layout components (Navbar, Footer)
+├── pages/              # Application pages/routes
+│   ├── Customize.tsx   # Event customization and booking
+│   ├── Payment.tsx     # Payment processing (M-Pesa, Card)
+│   ├── BookingConfirmation.tsx  # Booking confirmation
+│   ├── AdminDashboard.tsx       # Admin management portal
+│   └── ...
+├── types/              # TypeScript type definitions
+├── data/               # Static data (locations, customizations)
+├── lib/                # Utility functions (pricing, formatting)
+├── hooks/              # Custom React hooks
+└── assets/            # Static assets
 ```
 
-## Developer
+## Key Features
 
-**Saitoti Njapit** - Full Stack Developer
+### Customer-Facing Features
+- **Event Package Selection**: Essential, Standard, and Premium packages
+- **Dynamic Customization**: Real-time pricing with customizable options
+- **Location-Based Services**: Nairobi-wide coverage with location-based pricing
+- **Payment Integration**: M-Pesa, Credit/Debit Card, and Bank Transfer support
+- **Event Timeline Tracking**: Real-time event progress tracking
+- **Event Checklists**: Pre-event organization tools
+- **Customer Feedback**: Rating and review system
 
-Specializing in modern web technologies and creating exceptional user experiences.
+### Administrative Features
+- **Event Management Dashboard**: Complete event lifecycle management
+- **Vendor Management**: Vendor network coordination and tracking
+- **Financial Tracking**: Revenue and analytics dashboard
+- **Operations Dashboard**: Event operations and coordination tools
+
+### Business Model Alignment
+- ✅ Package-based revenue model
+- ✅ Customization add-ons
+- ✅ Location-based pricing
+- ✅ Seasonal pricing premiums
+- ✅ Corporate and social event support
+- ✅ Vendor margin management
+
+## Business Plan Alignment
+
+This platform implements all core requirements from the Remy Events business plan:
+- Technology-enabled event packaging
+- Centralized vendor orchestration
+- Transparent pricing
+- End-to-end accountability
+- Scalable platform architecture
+- Corporate and social event support
 
 ## License
 
-© 2026 Saitoti Njapit. All rights reserved.
+© 2026 Remy Events. All rights reserved.
