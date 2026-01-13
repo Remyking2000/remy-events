@@ -8,11 +8,11 @@ console.log(
   "color: #2563eb; font-size: 24px; font-weight: bold;"
 );
 console.log(
-  "%cDeveloped by Remy and Saitoti",
+  "%cDeveloped by Remy Richard",
   "color: #059669; font-size: 14px; font-weight: 500;"
 );
 console.log(
-  "%cContact: remyevents@gmail.com",
+  "%cContact: ycremy2000@gmail.com",
   "color: #6b7280; font-size: 12px;"
 );
 

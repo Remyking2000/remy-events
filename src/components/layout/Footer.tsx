@@ -136,7 +136,7 @@ export const Footer = () => {
                 © 2024 Remy Events. All rights reserved.
               </p>
               <p className="text-primary-foreground/40 text-xs mt-1">
-                Developed by <span className="text-accent font-medium">Saitoti Njapit</span>
+                Developed by <span className="text-accent font-medium">Remy Richard</span>
               </p>
             </div>
             <div className="flex items-center gap-4 sm:gap-6">

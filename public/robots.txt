@@ -14,5 +14,5 @@ User-agent: *
 Allow: /
 
 # Remy Events - Professional Event Planning in Nairobi
-# Developed by Saitoti Njapit
-# Contact: saitoti.njapit@example.com
+# Developed by Remy Richard
+# Contact: ycremy2000@gmail.com
